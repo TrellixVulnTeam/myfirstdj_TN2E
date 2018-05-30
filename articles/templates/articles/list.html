@@ -1,6 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div id=app>
+    <h2>[[ title ]]</h2>
+    <p>[[subtitle]]</p>
+    <ul>
+        <li v-for="day in days">
+            <h4> Day [[ day ]]</h4>
+        </li>
+    </ul>
+</div>
+<script>
+    new Vue({
+        delimiters: ['[[', ']]'],
+        el: '#app',
+        data: {
+            title: 'Welcome',
+            days: [1, 2, 3],
+            subtitle: "Django with Vue"
+        }
+    })
+</script>
+	<div id="app"></div>
 	<h1>Article list</h1>
 	<div class="articles">
 		{% for article in articles%}
