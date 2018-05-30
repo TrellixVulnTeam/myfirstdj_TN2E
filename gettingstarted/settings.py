@@ -78,12 +78,7 @@ WSGI_APPLICATION = 'gettingstarted.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd2umtus544lkii',
-        'USER': 'suhttccixnnthc',
-        'PASSWORD': '7e8b3f785bae205be699b3da3e6ebc2be11621679b312b5c99f107f8a8e53651',
-        'HOST': 'ec2-54-204-46-236.compute-1.amazonaws.com',
-        'PORT': '5432',
+
     }
 }
 
@@ -134,4 +129,3 @@ STATICFILES_DIRS = (
 )
 
 django_heroku.settings(locals())
-
